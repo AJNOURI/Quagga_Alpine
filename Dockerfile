@@ -16,5 +16,5 @@ RUN echo "VTYSH_PAGER=more" >> /etc/environment
 RUN chown -R quagga /etc/quagga
 ADD start-quagga.sh /start-quagga.sh
 VOLUME /etc/quagga /data
-ENTRYPOINT ["sh","start-quagga.sh"]
+#ENTRYPOINT ["sh","start-quagga.sh"]
 
